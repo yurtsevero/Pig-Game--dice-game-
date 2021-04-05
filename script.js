@@ -143,7 +143,7 @@ const updateCurrentScore = function (dice) {
 
 // check if one of the players has been reached to 100 points
 const checkForWinner = function () {
-  if (activePlayerScore >= 10) {
+  if (activePlayerScore >= 100) {
     getPlayer(activePlayer).classList.add('player--winner');
     return true;
   }
